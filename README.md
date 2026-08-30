@@ -2,6 +2,8 @@
 
 An end-to-end machine learning system that predicts the Air Quality Index (AQI) for four major Pakistani cities using XGBoost, Open-Meteo data, and Hopsworks as the feature store and model registry, served through an interactive Streamlit dashboard with SHAP explainability.
 
+**Live Demo:** [https://aqi-predictor-oapp6n5ejnccchssu3krbqu.streamlit.app/](https://aqi-predictor-oapp6n5ejnccchssu3krbqu.streamlit.app/)
+
 ## Setup & Installation
 
 ```bash
@@ -230,7 +232,6 @@ Saves all feature store data as per-city CSVs to `local_backup/`.
 
 ## Future Work
 
-- **Streamlit Cloud Deployment**: Deploy the dashboard publicly via Streamlit Community Cloud
 - **Incremental Updates**: Set up a lightweight cron inside Hopsworks to keep features fresh
 - **Multi-City Comparison**: Side-by-side AQI comparison view across all four cities
 - **Alerts**: Telegram or email notifications when AQI crosses unhealthy thresholds
