@@ -59,6 +59,10 @@ AQI Predictor/
 ├── hopsworks_backfill.py         # Self-contained backfill for Hopsworks Jupyter
 ├── hopsworks_train.py            # Self-contained training for Hopsworks Jupyter
 ├── export_existing_data.py       # Export feature store data to local CSV
+├── analyze_local.py              # Debug utility: Test model training locally from CSVs
+├── analyze_model.py              # Debug utility: Extract metrics/feature importance from Hopsworks model
+├── fix_schema.py                 # Debug utility: Script to recreate/fix feature group schema
+├── test_shap.py                  # Debug utility: Test SHAP explainer locally
 ├── requirements.txt              # Python dependencies
 └── .env.example                  # Template for API keys
 ```
