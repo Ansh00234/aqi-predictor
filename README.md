@@ -2,6 +2,18 @@
 
 An end-to-end machine learning system that predicts the Air Quality Index (AQI) for four major Pakistani cities using XGBoost, Open-Meteo data, and Hopsworks as the feature store and model registry, served through an interactive Streamlit dashboard with SHAP explainability.
 
+## Setup & Installation
+
+```bash
+python -m venv venv
+venv\Scripts\activate  # Windows
+pip install -r requirements.txt
+```
+
+> [!WARNING]
+> **Windows Installation Issue (`twofish` dependency):**
+> The `hopsworks` package depends on `pyjks`, which in turn requires the `twofish` cryptography package. `twofish` has C extensions that require Microsoft Visual C++ Build Tools to compile on Windows. If your installation fails with a C-compiler error, you must either install the MSVC build tools, or run the project in a WSL (Windows Subsystem for Linux) environment where GCC is available. Alternatively, you can use Hopsworks' built-in Jupyter environment which already has the dependencies resolved.
+
 ## System Architecture
 
 ```mermaid
