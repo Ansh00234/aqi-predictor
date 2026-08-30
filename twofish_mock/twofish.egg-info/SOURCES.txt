@@ -1,0 +1,5 @@
+setup.py
+twofish.egg-info/PKG-INFO
+twofish.egg-info/SOURCES.txt
+twofish.egg-info/dependency_links.txt
+twofish.egg-info/top_level.txt

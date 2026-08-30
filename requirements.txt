@@ -1,0 +1,13 @@
+requests
+pandas<2.2.0
+numpy
+hopsworks
+deltalake
+scikit-learn
+xgboost
+streamlit
+shap
+python-dotenv
+tenacity
+matplotlib
+tensorflow
