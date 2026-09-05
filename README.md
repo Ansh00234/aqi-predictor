@@ -62,27 +62,29 @@ Saves all feature store data as per-city CSVs to `local_backup/`.
 
 ## Repository Structure
 
+```
 AQI Predictor/
 ├── app/
-│ └── app.py # Streamlit dashboard
+│   └── app.py                    # Streamlit dashboard
 ├── feature_pipeline/
-│ ├── config.py # Central config, API keys, schema definition
-│ ├── fetch_data.py # Open-Meteo API data fetching with retries
-│ ├── features.py # Feature engineering
-│ ├── backfill.py # GitHub Actions backfill (deprecated)
-│ └── pipeline.py # Hourly incremental pipeline
+│   ├── config.py                 # Central config, API keys, schema definition
+│   ├── fetch_data.py             # Open-Meteo API data fetching with retries
+│   ├── features.py               # Feature engineering
+│   ├── backfill.py               # GitHub Actions backfill (deprecated)
+│   └── pipeline.py               # Hourly incremental pipeline
 ├── training_pipeline/
-│ ├── train.py # Model training (GitHub Actions version)
-│ └── evaluate.py # Evaluation metrics + AQI category mapping
+│   ├── train.py                  # Model training (GitHub Actions version)
+│   └── evaluate.py               # Evaluation metrics + AQI category mapping
 ├── .github/workflows/
-│ ├── feature_pipeline.yml # Hourly feature ingestion (manual only)
-│ └── training_pipeline.yml # Daily training (manual only)
-├── hopsworks_backfill.py # Self-contained backfill for Hopsworks Jupyter
-├── hopsworks_train.py # Self-contained training for Hopsworks Jupyter
-├── export_existing_data.py # Export feature store data to local CSV
-├── Project_Report.pdf # Detailed project report
-├── requirements.txt # Python dependencies
-└── .env.example # Template for API keys
+│   ├── feature_pipeline.yml      # Hourly feature ingestion (manual only)
+│   └── training_pipeline.yml     # Daily training (manual only)
+├── hopsworks_backfill.py         # Self-contained backfill for Hopsworks Jupyter
+├── hopsworks_train.py            # Self-contained training for Hopsworks Jupyter
+├── export_existing_data.py       # Export feature store data to local CSV
+├── Project_Report.pdf            # Detailed project report
+├── requirements.txt              # Python dependencies
+└── .env.example                  # Template for API keys
+```
 
 
 For full details on the architecture, data pipeline, feature engineering, model comparison, dashboard, and challenges faced during development, see **[Project_Report.pdf](./Project_Report.pdf)**.
